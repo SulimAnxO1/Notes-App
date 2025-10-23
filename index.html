@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Quick Notes</h1>
+      <div>
+        <!-- ADD NOTE -->
+        <button type="button" class="add-note-btn" onclick="penNoteDialog()">
+          + Add Note
+        </button>
+
+        <!-- DARK/LIGHT MODE -->
+        <button type="button" id="themeToggleBth" class="theme-toggle-btn">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="notesContainer" class="notes-grid"></main>
+
+    <!-- DIALOG -->
+    <dialog id="noteDialog">
+      <!-- DIALOG CONTAINER -->
+      <div class="dialog-content">
+        <!-- DIALOG HEADER -->
+        <div class="dialog-header">
+          <!-- DIALOG TITLE -->
+          <h2 class="dialog-title" id="dialogTitle">Add New Note</h2>
+          <!-- CLOSE BUTTON -->
+          <button type="button" class="close-btn" onclick="closeNoteDialog()">
+            x
+          </button>
+        </div>
+
+        <!-- FORM -->
+        <form id="noteForm">
+          <!-- FORM GROUP -->
+          <div class="form-group">
+            <!-- NOTE TITLE -->
+            <label for="noteTitle" class="form-label">Title</label>
+
+            <!-- NOTE TITLE INPUT -->
+            <input
+              type="text"
+              id="noteTitle"
+              class="form-input"
+              placeholder="Enter note title...."
+              required />
+          </div>
+
+          <!-- FORM GROUP -->
+          <div class="form-group">
+            <!-- NOTE CONTENT -->
+            <label for="noteContent" class="form-label">Content</label>
+
+            <!-- NOTE CONTENT AREA -->
+            <textarea
+              name="Note Content"
+              id="noteContent"
+              class="form-textarea"
+              placeholder="Write your note here"
+              required></textarea>
+          </div>
+
+          <!-- ACTION -->
+          <div class="dialog-action">
+            <!-- CANCEL BUTTON -->
+            <button
+              type="button"
+              class="cancel-btn"
+              onclick="closeNoteDialog()">
+              Cancel
+            </button>
+
+            <!-- SAVE BUTTON -->
+            <button type="button" class="save-btn">Save Note</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
