@@ -1,7 +1,7 @@
 # 📝 Notes App
 
 A simple and minimal **Notes App** that lets you create, edit, and delete notes directly in your browser.  
-All notes are automatically saved using **localStorage**, ensuring your thoughts are never lost! 💡
+All notes are automatically saved using **localStorage**, ensuring your thoughts are never lost!
 
 ---
 
@@ -16,7 +16,7 @@ All notes are automatically saved using **localStorage**, ensuring your thoughts
 ![Notes App Preview](/Image/preview1.png)
 ![Notes App Preview](/Image/preview2.png)
 ![Notes App Preview](/Image/preview3.png)
-![Notes App Preview](/Image/preview4.png)
+![Notes App Preview](/Image/preview.png)
 
 ---
 
